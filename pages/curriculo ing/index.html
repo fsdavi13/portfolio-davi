@@ -9,6 +9,7 @@
 
     <style>
         
+        
         * {
             margin: 0;
             padding: 0;
@@ -16,10 +17,10 @@
         }
 
         body{
-            font-family: 'Poppins', sans-serif, "Segoe UI Emoji", "Apple Color Emoji", "Noto Color Emoji";   
+            font-family: 'Poppins', sans-serif;   
             background: radial-gradient(circle at top, #2a2a2a, #0d0d0d);
             color: white;
-            
+            display: flex;
         }
 
         .box{
@@ -74,6 +75,30 @@
             border: 2px solid white;
         }
 
+        .inner{
+            display: block;
+            margin: 12px 0;
+            padding: 15px;
+            border-radius: 15px;
+
+            background-color: rgba(255, 255, 255, 0.05);
+
+            border: 1px solid rgba(255,255,255,0.1);
+            font-weight: 500;
+            transition: 0.3s;
+            
+        }
+
+        .inner:hover {
+            transform: scale(1.05);
+            box-shadow: 0 10px 20px rgba(0,0,0,0.4);
+        }
+
+        .icone:hover{
+            transform: scale(1.05);
+            box-shadow: 0 10px 20px rgba(0,0,0,0.4);
+        }
+
         @keyframes aparecer {
             from {
                 opacity: 0;
@@ -100,8 +125,7 @@
                 <img class="icone" src="../../images/foto linkedln.png"></a> 
                 Davi Ferreira' Resume</h1> 
         <h2>
-            <a href="../curriculo pt/index.html">
-            Portuguese Version 
+            <a class="inner box" href="../curriculo pt/index.html">Versão em Português
             <img src="https://flagcdn.com/16x12/br.png" alt="Brasil" style="vertical-align: middle;">
             </a>
         </h2>
