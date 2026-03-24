@@ -3,9 +3,25 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Portfolio Davi | Resume</title>
-    <link rel="icon" href="../../images/logo-branca.png" type="image/png">
+    <title>Portfólio Davi | Currículo</title>
+    <link rel="icon" href="../../images/icon.png" type="image/png">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;500;700&display=swap" rel="stylesheet">
+
     <style>
+        
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body{
+            font-family: 'Poppins', sans-serif, "Segoe UI Emoji", "Apple Color Emoji", "Noto Color Emoji";   
+            background: radial-gradient(circle at top, #2a2a2a, #0d0d0d);
+            color: white;
+            
+        }
+
         .box{
             align-items: center;
             padding: 30px;
@@ -20,42 +36,78 @@
 
         .curriculo{
             border-radius: 20px;
+            animation: aparecer 0.8s ease-out;
+            max-width: 100%;
+            height: auto;
         }
 
-        .outer{
-            background-color: lightgrey;
-            width: 850px;
-        }
-
-        .inner{
-            margin-bottom: 10px;
-            background-color: black;
-            font-family: Verdana, Geneva, Tahoma, sans-serif;
-        }
         a{
-            color: black;
+            color: white;
+            text-decoration: none;
         }
+        
         .title{
             align-items: center;
             padding: 30px;
             text-align: center;
-            font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+            animation: aparecer 0.8s ease-out;
+            margin-bottom: 25px;
+            position: relative;
         }
+
+        .title h1{
+            font-size: 30px;
+            font-weight: 500;
+        }
+
+        .title h2{
+            font-size: 20px;
+            font-weight: 400;
+        }
+
+        .icone {
+            width: 40px;
+            height: 40px;
+            border-radius: 50%;
+            vertical-align: middle;
+            margin-right: 10px;
+            border: 2px solid white;
+        }
+
+        @keyframes aparecer {
+            from {
+                opacity: 0;
+                transform: translateY(10px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        @media (max-width: 500px) {
+            .container {
+                padding: 20px;
+            }
+        }
+
     </style>
 </head>
 <body>
-    <div class="title">
-        <h1><a href="../../index.html"><img class="icone" src="../../images/logo-preta.png" height="30" width="30"></a>
-                Davi Ferreira's Resume</h1>
-        <h2><a href="../curriculo pt/index.html">Portuguese Version</a></h2>
-    </div>
-
-    
-
     <div class="outer box">
+    <div class="title">
+        <h1><a href="../../index.html">
+                <img class="icone" src="../../images/foto linkedln.png"></a> 
+                Davi Ferreira' Resume</h1> 
+        <h2>
+            <a href="../curriculo pt/index.html">
+            Portuguese Version 
+            <img src="https://flagcdn.com/16x12/br.png" alt="Brasil" style="vertical-align: middle;">
+            </a>
+        </h2>
+    </div>
+    
         <img class="curriculo" src="../../images/Davi Ferreira – Resume.jpg" width="827" height="1170">
     </div>
-
-
 </body>
 </html>
